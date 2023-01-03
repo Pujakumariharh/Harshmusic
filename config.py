@@ -58,7 +58,7 @@ TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "104857600"))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "1073741824"))
 # https://www.gbmb.org/mb-to-bytes
 
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BQC7kZez6Ntw2vOTdKaxg92gVsJGj5kG8Let9kRmh3trKTW9DNnrP6AbCTdnaXmKpQOr0vt8rFZqssEalFiLV70vsC-LxAWs_rbg4dk07YojIYlHMnE5DCE5Yaz4qIBpAVN96X6jul2m6MSRAG7OBvqioR8wv16FujsPdZYAUY1Im8t-D-OoJTjn2qytnUqEENVoYOKzk-bt8AUGbn55ClMT1pH5Wv1p7NIrnTjks1GeEvF_AS601aZc-4OQOog_Mfsp81dnI6TnlpJMFsY2GaphEH6pQYQfQhkvk8W-jC5n9TPDHSfhCyCmVzTvgUKRGBZ2GGsLyY2jI5L82N9NG0jWAAAAAVSs9dAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -76,11 +76,11 @@ clean = {}
 autoclean = []
 
 
-START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/56d1760224589ee370186.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/4578b8fa2ba1cd050f311.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://telegra.ph/file/56d1760224589ee370186.jpg",
+    "https://te.legra.ph/file/4578b8fa2ba1cd050f311.jpg",
 )
 
 PLAYLIST_IMG_URL = "https://te.legra.ph/file/4ec5ae4381dffb039b4ef.jpg"
@@ -130,9 +130,9 @@ if UPSTREAM_REPO:
 if PING_IMG_URL:
     if PING_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
-            PING_IMG_URL = "https://telegra.ph/file/56d1760224589ee370186.jpg"
+            PING_IMG_URL = "https://te.legra.ph/file/4578b8fa2ba1cd050f311.jpg"
 
 if START_IMG_URL:
     if START_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", START_IMG_URL):
-            START_IMG_URL = "https://te.legra.ph/file/56d1760224589ee370186.jpg"
+            START_IMG_URL = "https://te.legra.ph/file/4578b8fa2ba1cd050f311.jpg"
